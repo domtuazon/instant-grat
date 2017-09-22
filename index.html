@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Instant Grat</title>
+
+  <link rel="stylesheet" href="site_contents/css/normalize.css">
+  <!-- <link rel="stylesheet" href="site_contents/bootstrap-grid.min.css"> -->
+  <link rel="stylesheet" href="site_contents/css/bootstrap.min.css">
+  <link rel="stylesheet" href="site_contents/css/bootstrap.min.css.map">
+  <link rel="stylesheet" href="site_contents/css/main.css">
+</head>
+<body>
+  <div class="instant-grat">
+    <section class="landing">
+      <div class="text-wrap">
+        <h1>Special Gifts Await!</h1>
+        <p>when you spend a minimum of P1,500 using your UnionBank Credit Card.</p>
+        <div class="reference-wrapper">
+          <label for="">Enter Reference Code</label>
+          <input type="text" id="ref-code" data-container=".reference-wrapper" data-toggle="popover" data-trigger="manual" data-placement="bottom" data-content="Reference code is invalid or is already used.">
+          <br>
+          <label for="" style="font-size: 1em; margin-top: 15px;">
+            <input type="checkbox">
+            I have read and agree to the <a href="" data-target="#promo-terms-modal" data-toggle="modal" style="color: #fff; text-decoration: underline;">Promo Terms and Conditions</a>
+          </label>
+          <button disabled>SUBMIT</button>
+        </div>
+        <div class="logos-wrap">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <div class="row">
+                <div class="col-sm-3">
+                  <img src="site_contents/company_logos/auntie-anne.png" alt="auntie annes" class="img-responsive">
+                </div>
+                <div class="col-sm-3">
+                  <img src="site_contents/company_logos/bonchon.png" alt="bonchon" class="img-responsive">
+                </div>
+                <div class="col-sm-3">
+                  <img src="site_contents/company_logos/mrs-fields.png" alt="bonchon" class="img-responsive">
+                </div>
+                <div class="col-sm-3">
+                  <img src="site_contents/company_logos/seattles-best.png" alt="bonchon" class="img-responsive">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="overlay">
+      <div class="text-wrap">
+        <div class="product-holder">
+          <h1 style="text-center">YOU GOT</h1>
+          <br>
+          <div class="icon-wrap">
+            <img id="prize-img" src="site_contents/prizes/sb-1.png" alt="">
+          </div>
+          <div class="name-wrap">
+            <p id="prize-txt">Small Seattle’s Best Coffee Java Mocha</p>
+          </div>
+        </div>
+      </div>
+      <p class="bottom-note">You will receive an SMS Voucher Code in your mobile number on record. Present this code when you redeem your gift.</p>
+    </section>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="gifts-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button> -->
+        <div class="modal-body">
+          <h1 style="margin-bottom: 25px;" class="text-center">Thank you for using your UnionBank Credit Card.</h1>
+          <h4 style="font-weight: 300;" class="text-center">Choose one to reveal your special treat!</h4>
+          <br>
+          <div class="row">
+            <div class="col-xs-4"><img src="site_contents/gift-box-orange.png" alt="" class="img-responsive gift-box"></div>
+            <div class="col-xs-4"><img src="site_contents/gift-box-orange.png" alt="" class="img-responsive gift-box"></div>
+            <div class="col-xs-4"><img src="site_contents/gift-box-orange.png" alt="" class="img-responsive gift-box"></div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4"><img src="site_contents/gift-box-orange.png" alt="" class="img-responsive gift-box"></div>
+            <div class="col-xs-4"><img src="site_contents/gift-box-orange.png" alt="" class="img-responsive gift-box"></div>
+            <div class="col-xs-4"><img src="site_contents/gift-box-orange.png" alt="" class="img-responsive gift-box"></div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4"><img src="site_contents/gift-box-orange.png" alt="" class="img-responsive gift-box"></div>
+            <div class="col-xs-4"><img src="site_contents/gift-box-orange.png" alt="" class="img-responsive gift-box"></div>
+            <div class="col-xs-4"><img src="site_contents/gift-box-orange.png" alt="" class="img-responsive gift-box"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="promo-terms-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Promo Terms and Conditions</h4>
+        </div>
+        <div class="modal-body">
+          <h4>General Mechanics</h4>
+          <ol>
+            <li>The promo is open to select UnionBank Credit Card principal cardholders who received the SMS and eDM notification.</li>
+            <li>Promo period is from October 1, 2017 to January 31, 2018.</li>
+            <li>Redemption period is from October 1, 2017 to March 31, 2018.</li>
+            <li>
+              Cardholder should make a minimum single-receipt transaction* of Php1,500 at any merchant to qualify for the promo.
+              <br>
+              <small>* A single-receipt transaction is a transaction covered by a single official receipt/sales invoice and a single credit card charge slip. Straight and installment retail transactions made in the Philippines and transacted in Philippine Pesos are included in this Promo. Non-retail transactions such as, but not limited to, Utility payments (cable, water, telephone, electricity), fees and charges, etc. as well as charge slips reflecting foreign currency transactions (including Duty Free Philippines transactions in US dollars), even if billed in Philippine Pesos, are excluded from the Promo. Transactions made at any gambling establishment such as casinos or those with no Point-of-Sale (POS) machine credit card charge slips such as, but not limited to, Auto charge, Balance Transfer, Retail Conversion, Retail Reimbursement, Cash Advance, Mail Order/Telephone Order transactions, etc. are likewise excluded from this Promo.</small>
+            </li>
+            <li>A single purchase transaction requires only one approval.  Splitting into smaller transaction sizes, and consequently, requiring multiple transaction approvals will not be allowed.</li>
+            <li>
+              Cardholder is entitled to receive one (1) Reference Code via SMS for every qualified and posted transactions. <br>
+              <p>Example of Reference Code SMS:</p>
+              <p>Thank you for using your card ending in XXXX last DD/MM/YY. Your reference code for this transaction is #####. This qualifies you to get a free item from Auntie Anne’s, Bonchon, Mrs. Fields or Seattle’s Best Coffee. Visit www.unionbankph.com/instantgift and enter your reference code to find out your instant gift. Ref code is valid until 31Mar’18. DTI00000S17</p>
+            </li>
+            <li>Cardholder is allowed to receive a maximum of five (5) Reference Codes within the promo period. Cardholder who reached the maximum limit will be notified via SMS and or email.</li>
+            <li>Cardholder should visit www.unionbankph.com/instantgift and enter the valid Reference Code. Upon entering the Reference Code, cardholder will choose and click on one of the gift icons to reveal his/her instant gift.</li>
+            <li>
+              Complete list of participating merchant and instant gifts are as follows:
+              <br>
+              <table class="table table-condensed table-bordered">
+                <tr>
+                  <th>Participating establishment</th>
+                  <th>Free Item/s</th>
+                </tr>
+                <tr>
+                  <td>Auntie Anne’s</td>
+                  <td>
+                    <ul>
+                      <li>Premium Pretzel with Medium Lemonade & 1 Dip</li>
+                      <li>Cream Cheese Stix with Large Lemonade</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Bonchon</td>
+                  <td>
+                    <ul>
+                      <li>Wings Boxed Meal</li>
+                      <li>Fish and Chips Boxed Meal</li>
+                      <li>Mandu Boxed Meal*</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mrs Fields</td>
+                  <td>
+                    <ul>
+                      <li>Mrs. Fields Crunchies in Acetate Tube</li>
+                      <li>Mrs. Fields Brookies Tub of 8's</li>
+                      <li>Food and Drink Voucher worth P185</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Seattle’s Best Coffee</td>
+                  <td>
+                    <ul>
+                      <li>Small Mocha Javakula</li>
+                      <li>Medium Americano</li>
+                      <li>Medium Cappuccino</li>
+                      <li>Medium Breve</li>
+                      <li>Medium Latte</li>
+                      <li>Medium Flavored Latte</li>
+                      <li>Small Hot Chocolate</li>
+                      <li>Small Steamed Milk</li>
+                      <li>Small Italian Soda</li>
+                      <li>Small Juice</li>
+                      <li>Milkshake</li>
+                      <li>Small X-Tea</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </li>
+            <li>
+              Cardholder can only choose one gift icon per qualified Reference Code. Once cardholder has chosen a gift icon, he/she will receive an SMS Voucher Code to be presented to the partner merchant for the redemption of the free gift.
+              <br>
+              <br>
+              <p>Example of Voucher Code SMS: <br>
+                You get a Free Bonchon Meal with Voucher Code #####.  Pls present your UnionBank Credit Card, valid ID & this SMS to any Bonchon branch to redeem your free item. Voucher code is valid until 31Mar’18. For T&Cs, visit www.unionbankph.com/instantgift. DTI00000S17</p>
+            </li>
+            <li>SMS Voucher Codes can be redeemed until March 31, 2018.</li>
+            <li>Reference Codes and Voucher Codes will be sent to the Cardholder’s mobile number on record. For updates on contact information, Cardholder can call UnionBank Customer Service at 84-186 or (02) 841-8600 or e-mail customer.service@unionbankph.com</li>
+            <li>UnionBank shall not be obliged to recognize or re-send deleted SMS.</li>
+          </ol>
+          <h4>Redemption Mechanics</h4>
+          <ol>
+            <li>To redeem, cardholder should present the SMS Voucher Code together with 1 Valid ID and UBP Credit Card to the participating merchant from October 1, 2017 to March 31, 2018.</li>
+            <li>Participating establishment validates SMS and asks the cardholder to sign the monitoring sheet as proof of redemption. </li>
+            <li>Upon receiving of the free gift the cardholder must allow the participating establishment to delete the SMS from his or her mobile phone. </li>
+            <li>UnionBank, thru the frontliners of the participating establishments, reserves the right to refuse redemption of the free gift if the SMS is not from UnionBank’s official number.</li>
+            <li>Cardholders without the SMS Voucher Code will not be allowed to redeem. SMS Voucher Codes may only be used once. The retail price/cost of the Items redeemed through multiple redemptions using one voucher code shall be charged to the Cardholder’s Card.</li>
+            <li>A cardholder may redeem a maximum of 3 Voucher Codes per participating merchant per day.</li>
+            <li>The free gift can only be redeemed by the principal cardholder and non-transferable.</li>
+            <li>The free gift cannot be exchanged for cash, other products or discounts.</li>
+            <li>All unused and unredeemed Reference Codes and Voucher Codes after the Redemption Period will be forfeited.</li>
+            <li>In case of dispute with respect of UnionBank only and the customers' availment of promo, the decision of UnionBank with the concurrence of DTI shall be considered final. However, if dispute involves participating Merchant and its performance and/or delivery of products to customers, subject to the General Provisions set out above, the decision of UnionBank and participating Merchant with the concurrence of DTI shall be considered final.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="site_contents/js/jquery.min.js" charset="utf-8"></script>
+  <script src="site_contents/js/bootstrap.min.js" charset="utf-8"></script>
+  <script>
+    $(document).ready(function() {
+
+      function showprize(randNum) {
+
+        var descArr = [
+          'Auntie Anne\'s Premium Pretzel w/ Medium Lemonade & 1 dip',
+          'Auntie Anne\'s Cream Cheese Stix w/ Large Lemonade',
+          'Bonchon Boxed Meal',
+          'Mrs. Fields Crunchies',
+          'Mrs. Fields Brookies',
+          'Mrs. Fields Food and Drink Voucher',
+          'Small Seattle’s Best Coffee Java Mocha'
+        ];
+
+        $('#prize-txt').html(descArr[randNum]);
+        $('#prize-img').prop('src', 'site_contents/prizes/pz-'+(randNum+1)+'.jpg');
+
+        $('#gifts-modal').modal('hide');
+        $('.overlay').css('display', 'flex');
+      }
+
+      function showerror() {
+        // show error alert.
+        $('#ref-code').popover('show');
+      }
+
+      $('input[type="checkbox"]').on('change', function() {
+        $('.reference-wrapper button').prop('disabled', !this.checked)
+      });
+
+      $('.reference-wrapper button').on('click', function() {
+        // do check for valid reference code here.
+
+        // if valid
+        // $('#gifts-modal').modal('show');
+        // $('#ref-code').popover('hide');
+        // if not
+        showerror();
+      });
+
+      $('.gift-box').on('click', function() {
+        // The randomizer should be done on the backend.
+        // I'll send correct sequence of prizes.
+        showprize(randomizer());
+      });
+
+      // Only temporary. Delete this.
+      function randomizer() {
+        return Math.floor((Math.random() * 7))
+      }
+
+    });
+  </script>
+</body>
+</html>
